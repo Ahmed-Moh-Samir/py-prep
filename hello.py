@@ -1,4 +1,7 @@
 import requests
 
-print("Python works.")
-print(f"requests version: {requests.__version__}")
+url = "https://re.jrc.ec.europa.eu/api/v5_3/seriescalc"
+
+response = requests.get(url)
+
+print(response.json())
